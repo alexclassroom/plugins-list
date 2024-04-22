@@ -3,13 +3,13 @@ Contributors: dartiss, nutsmuggler
 Donate link: https://artiss.blog/donate
 Tags: plugins, list, show, installed, display
 Requires at least: 4.6
-Tested up to: 6.4
+Tested up to: 6.5
 Requires PHP: 7.4
-Stable tag: 2.6.1
+Stable tag: 2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-🔌 Allows you to insert a list of the Wordpress plugins you are using into any post/page.
+Allows you to insert a list of the Wordpress plugins you are using into any post/page.
 
 == Description ==
 
@@ -29,9 +29,9 @@ Key features include...
 
 Thanks to [Matej Nastran](http://matej.nastran.net/)'s [My plugins](http://wordpress.org/extend/plugins/my-plugins/), from which *Plugins list* was initially derived.
 
-Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore) ♥️
+Iconography is courtesy of the very talented [Janki Rathod](https://www.fiverr.com/jankirathore).
 
-👉 Please visit the [Github page](https://github.com/dartiss/plugins-list "Github") for the latest code development, planned enhancements and known issues 👈
+***Please visit the [Github page](https://github.com/dartiss/plugins-list "Github") for the latest code development, planned enhancements and known issues***
 
 == Getting Started ==
 
@@ -85,7 +85,7 @@ If you wanted to show just inactive, you'd put..
 
 `[plugins_list format="{{LinkedTitle}} ({{LinkedAuthor}}) - {{Description}}{{br/}}" show_inactive=true show_active=false]`
 
-If you wanted to show just plugins that are inactive but were recently acive, you'd put...
+If you wanted to show just plugins that are inactive but were recently active, you'd put...
 
 `[plugins_list format="{{LinkedTitle}} ({{LinkedAuthor}}) - {{Description}}{{br/}}" show_inactive=false show_active=false show_recent=true]`
 
@@ -182,7 +182,7 @@ Using double braces (i.e. {{ and {{) for templates is pretty standard so somethi
 
 For your security, not all HTML tags are allowed - we've limited this to any that are for the purposed of text formatting (inc. bullet points) and tables.
 
-The full of allowed tags are: <a>, <b>, <big>, <blockquote>, <br>, <caption>, <center>, <cite>, <code>, <col>, <colgroup>, <div>,  <em>, <font>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <hr>, <i>, <img>, <li>, <ol>, <p>, <pre>, <q>, <s>, <small>, <span>, <strike>, <strong>, <style>, <sub>, <sup>, <table>, <td>, <th>, <tr>, <u> and <ul>.
+The full list of allowed tags are: <a>, <b>, <big>, <blockquote>, <br>, <caption>, <center>, <cite>, <code>, <col>, <colgroup>, <div>,  <em>, <font>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <hr>, <i>, <img>, <li>, <ol>, <p>, <pre>, <q>, <s>, <small>, <span>, <strike>, <strong>, <style>, <sub>, <sup>, <table>, <td>, <th>, <tr>, <u> and <ul>.
 
 == Screenshots ==
 
@@ -191,6 +191,10 @@ The full of allowed tags are: <a>, <b>, <big>, <blockquote>, <br>, <caption>, <c
 == Changelog ==
 
 I use semantic versioning, with the first release being 1.0.
+
+= 2.7 =
+* Enhancement: The plugin was getting a little too large to manage within one file, so I've split into a number of smaller ones
+* Enhancement: Assorted, small, code quality improvements
 
 = 2.6.1 =
 * Enhancement: Code quality improvements made - passes PHPCS for WordPress and WordPress VIP sniffs
@@ -307,5 +311,5 @@ I use semantic versioning, with the first release being 1.0.
 
 == Upgrade Notice ==
 
-= 2.6.1 =
-* Code quality improvements
+= 2.7 =
+* More code quality improvements
